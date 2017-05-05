@@ -7,7 +7,7 @@ import sys
 import zipfile
 import argparse
 
-__version__ = '0.0.1'
+__version__ = '0.1.0'
 
 
 def compile_hy(target):
