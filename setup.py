@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 from setuptools import setup, find_packages
-from hyapp import __version__
+from hypo import __version__
 
 config = {
     'name': 'hypo',
@@ -12,7 +12,7 @@ config = {
     'long_description': open('README.rst', 'r').read(),
     'license': 'MIT',
     'version': __version__,
-    'install_requires': [],
+    'install_requires': ['hy>=0.12.1'],
     'classifiers': [
         "Programming Language :: Python",
         "Programming Language :: Python :: 2",
