@@ -67,22 +67,26 @@ Source files
 
 -  iota.hy
 
-   .. code:: clj
+.. code:: clj
 
-       (defn iota [m &optional [n 0] [step 1]]
-         (if (>= n m)
-       None
-       (cons n (iota m (+ n step) step))))
+    (defn iota [m &optional [n 0] [step 1]]
+      (if (>= n m)
+        None
+        (cons n (iota m (+ n step) step))))
 
 -  main.hy
-   .. code:: clj
 
-       (import [iota [iota]])
-       (defmain [&rest args]
-         (print (iota 10)))
+.. code:: clj
 
-## License Distributed
-under `MIT
+    (import [iota [iota]])
+
+    (defmain [&rest args]
+      (print (iota 10)))
+
+License
+-------
+
+Distributed under `MIT
 License <https://github.com/koji-kojiro/hylang-hypo/blob/master/LICENSE>`__.
 
 Author
